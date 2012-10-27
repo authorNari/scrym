@@ -48,9 +48,12 @@ Or install it yourself as:
 
     $ gem install scrym
 
-## Supported or Not supported
+## Supported
 
 * Ruby 1.9.3 or later
+
+## Not supported
+
 * Finalizer (All programmers should not use any finalizer)
 
 ## Acknowledgment
