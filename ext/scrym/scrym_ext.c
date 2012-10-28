@@ -195,10 +195,6 @@ scrym_mark(VALUE self, VALUE obj)
         rb_raise(rb_eArgError, "can not accept an node");
         return;
     }
-    if (FL_TEST(obj, FL_FINALIZE)) {
-        rb_raise(rb_eArgError, "defined a finalizer");
-        return;
-    }
     if (RBASIC(obj)->flags & global_desc->mark_mask) {
         return;
     }
